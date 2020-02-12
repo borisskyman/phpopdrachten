@@ -8,22 +8,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/style.css">
         <title><?php print "pagina 1"; ?></title>
     </head>
-    <body>
+    <body id="IndexBody">
     <header>
-        <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
+        <h1 id="UitwerkingenTitel"><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
     </header>
     <aside>
-        <h2>Menu</h2>
+        <h2 id="Menu">Menu</h2>
         <ul>
-            <li>Hoofdstuk 2
+            <li><span class="Hoofdstukken">Hoofdstuk 2</span>
                 <ul>
                     <li>
                         <a href="hoofdstuk2/opdracht%202.1.php">Opdracht 2.1</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 2.2</a>
+                        <a href="hoofdstuk2/opdracht%202.2.php">Opdracht 2.2</a>
                     </li>
                 </ul>
             </li>

@@ -1,13 +1,57 @@
 /*
-Opdracht:           13.1
+Opdracht:           Stylesheet opmaken voor Index.php
 Auteur:             Boris Vasic
-Aanmaakdatum:       15-12-2019 18:13
-Bestandnaam:        StyleSheet.css
+Aanmaakdatum:       5-2-2020
+Bestandnaam:        style.css
 */
-
-
-
-
+#IndexBody
+{
+    background-color: antiquewhite;
+    margin: 0px;
+}
+#UitwerkingenTitel
+{
+    margin: 0px;
+    background-color: darkorange;
+    padding: 2%;
+}
+#Menu
+{
+    padding-left: 1%;
+}
+#wrapper
+{
+    background-color: coral;
+    padding: 2%;
+}
+#Klas
+{
+    text-align: center;
+    background-color: red;
+    padding: 2.5%;
+    color: white;
+}
+.Hoofdstukken
+{
+    font-weight: bold;
+}
+h1,h2,a,li,ul
+{
+    font-family: "Arial";
+}
+ul,li
+{
+    list-style-type: none;
+}
+.Opdracht2Punt2H4,.Opdracht2Punt2P
+{
+    color: indigo;
+}
+.Opdracht2Punt2P
+{
+    background-color: aliceblue;
+    padding: 20px;
+}
 
 
 
