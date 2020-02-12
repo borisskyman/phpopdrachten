@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <title><?php print "Opdracht 2.2"; ?></title>
     </head>
-    <body id="BodyTweePuntTwee">
+    <body>
         <div>
           <?php
             $text1 = "Hallo";
