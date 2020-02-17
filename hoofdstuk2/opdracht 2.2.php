@@ -2,7 +2,7 @@
  * User: Boris Vasic
  * Date: 10-2-2020
  * Time: 14:38
- * File: index.php
+ * File: opdracht2.2.php
  */?>
 <!DOCTYPE html>
 <html lang="en">

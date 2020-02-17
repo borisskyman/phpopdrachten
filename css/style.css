@@ -46,13 +46,18 @@ ul,li
 .Opdracht2Punt2H4,.Opdracht2Punt2P
 {
     color: indigo;
+    font-family: "Arial";
 }
 .Opdracht2Punt2P
 {
     background-color: aliceblue;
     padding: 20px;
 }
-
+.VerhaalP
+{
+    font-family: "Arial";
+    font-weight: 200;
+}
 
 
 
