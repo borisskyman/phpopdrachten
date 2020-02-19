@@ -20,19 +20,23 @@
                 $driveOn = true;
                 if ($trafficLightColor == "groen" && $ambulanceComing == true)
                 {
-                    echo "U moet stoppen";
+                    echo "<p class='red'>U moet stoppen</p>";
                 }
                else if ($trafficLightColor == "groen" && $ambulanceComing == false && $driveOn == true)
                 {
-                    echo " U mag doorrijden";
+                    echo " <p class='green'>U mag doorrijden</p>";
                 }
-                else if ($trafficLightColor == "oranje" || $trafficLightColor == "rood")
+                else if ($trafficLightColor == "rood")
                 {
-                    echo "U moet stoppen";
+                    echo "<p class='red'>U moet stoppen</p>";
+                }
+                else if ($trafficLightColor == "oranje")
+                {
+                    echo "<p class='orange'>U moet stoppen</p>";
                 }
                 else
                 {
-                    echo "Fout ingevoerd";
+                    echo "Fout ingevoerd"
                 }
             ?>
             <br> <br>
@@ -57,7 +61,6 @@
                     echo "Je woont in ".$countryName." en bent ".$currentAge." jaar oud <br> <br>";
                     echo "Je mag hier zwakke alcohol drinken";
                 }
-
     ?>
 </div>
 <a href="../index.php">Terug</a>

@@ -58,8 +58,18 @@ ul,li
     font-family: "Arial";
     font-weight: 200;
 }
-
-
+.red
+{
+    color: red;
+}
+.green
+{
+    color: green;
+}
+.orange
+{
+    color: orange;
+}
 
 
 
