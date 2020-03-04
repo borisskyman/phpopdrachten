@@ -48,6 +48,7 @@
                 ?>
             </p>
         </div>
+        <?php include '../Includes/footer.php'; ?>
     <a href="../index.php">Terug</a>
     </body>
 </html>

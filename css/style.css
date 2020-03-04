@@ -24,7 +24,7 @@ Bestandnaam:        style.css
     background-color: coral;
     padding: 2%;
 }
-#Klas
+.Klas
 {
     text-align: center;
     background-color: red;
@@ -69,6 +69,15 @@ ul,li
 .orange
 {
     color: orange;
+}
+.BoldSPAN
+{
+    font-weight: bold;
+}
+#WelkeVakEnDocentHebIkZin
+{
+    font-family: "Arial";
+    font-size: 20px;
 }
 
 

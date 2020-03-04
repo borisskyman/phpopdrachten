@@ -41,7 +41,25 @@
                         <a href="hoofdstuk3/Opdracht3.3.php">Opdracht 3.3</a>
                     </li>
                 </ul>
+                <br>
             </li>
+        <li><span class="Hoofdstukken">Hoofdstuk 4</span>
+            <br>
+            <ul>
+                <li>
+                    <a href="hoofdstuk4/Opdracht4.1.php">Opdracht 4.1</a>
+                </li>
+                <li>
+                    <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 4.2</a>
+                </li>
+                <li>
+                    <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 4.3</a>
+                </li>
+                <li>
+                    <a href="hoofdstuk3/Opdracht3.3.php">Opdracht 4.4</a>
+                </li>
+            </ul>
+        </li>
         </ul>
     </aside>
     <main id="wrapper">

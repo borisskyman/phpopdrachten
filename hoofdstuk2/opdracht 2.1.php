@@ -12,7 +12,7 @@
         <title><?php print "Opdracht 2.1"; ?></title>
     </head>
     <body>
-        <h1 id="Klas">
+        <h1 class="Klas">
             IO1B4
         </h1>
         <h1>
@@ -20,6 +20,7 @@
             echo "Hello world";
             ?>
         </h1>
+        <?php include '../Includes/footer.php'; ?>
         <a href="../index.php">Terug</a>
     </body>
 </html>

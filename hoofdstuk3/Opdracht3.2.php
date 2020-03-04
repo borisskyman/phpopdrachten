@@ -39,10 +39,10 @@
                             echo "Fout ingevoerd";
                         }
                     ?>
-                    <br> <br>
+
             <?php
-                        $countryName = "België";
-                        $currentAge = 12;
+                        $countryName = "Nederland";
+                        $currentAge = 17;
                         if ($countryName == "Zweden" && $currentAge >= 20 ||
                             $countryName == "Nederland" && $currentAge >= 18 ||
                             $countryName == "Cyprus" && $currentAge >= 17 ||
@@ -63,6 +63,7 @@
                         }
             ?>
         </div>
+        <?php include '../Includes/footer.php'; ?>
         <a href="../index.php">Terug</a>
     </body>
 </html>
