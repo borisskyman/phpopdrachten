@@ -53,10 +53,10 @@
                     <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 4.2</a>
                 </li>
                 <li>
-                    <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 4.3</a>
+                    <a href="hoofdstuk4/Opdracht4.3.php">Opdracht 4.3</a>
                 </li>
                 <li>
-                    <a href="hoofdstuk3/Opdracht3.3.php">Opdracht 4.4</a>
+                    <a href="hoofdstuk4/Opdracht4.4.php">Opdracht 4.4</a>
                 </li>
             </ul>
         </li>
