@@ -1,8 +1,8 @@
 <?php
 /**
  * User: Boris Vasic
- * Date: 19-2-2020
- * Time: 12:02
+ * Date: 15-3-2020
+ * Time: 21:43
  * File: opdracht4.4.php
  */
 $opdracht = "Opdracht 4.4";
@@ -12,14 +12,29 @@ include '../Includes/header.php'; ?>
             Weekkalender komende week:
         </h1>
         <?php
-
+            $dagNamen = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag", "zondag");
+            for ($day = 0; $day <8 ; $day++)
+            {
+                $datumAlsGetal = strtotime("+$day days");
+                echo "<br>";
+                echo "Dag ";
+                echo date('w', $datumAlsGetal);
+                echo " is ";
+                echo "$dagNamen[$day] ";
+                echo date('d-m-Y', $datumAlsGetal);
+            }
+        ?>
+        <br> <br>
+        <?php
+        // === Taak 3 === //
+        $DagNaam = array("Vandaag","Morgen","Over-Morgen","Over-Over-Morgen","Over-Over-Over-Morgen","Over-Over-Over-Over-Morgen",
+            "Over-Over-Over-Over-Over-Morgen", "Over-Over-Over-Over-Over-Over-Morgen");
         $dagNamen = array("zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag", "zondag");
         for ($day = 0; $day <8 ; $day++)
         {
             $datumAlsGetal = strtotime("+$day days");
             echo "<br>";
-            echo "Dag ";
-            echo date('w', $datumAlsGetal);
+            echo "$DagNaam[$day] ";
             echo " is ";
             echo "$dagNamen[$day] ";
             echo date('d-m-Y', $datumAlsGetal);
