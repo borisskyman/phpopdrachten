@@ -61,6 +61,5 @@ switch ($courseName)
     case "Rekenen":
         $teacherName = "Martijn van de Wetering";
         break;
-
 }
 ?>
