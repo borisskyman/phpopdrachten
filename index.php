@@ -44,22 +44,40 @@
                 <br>
             </li>
         <li><span class="Hoofdstukken">Hoofdstuk 4</span>
+                <br>
+                <ul>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.1.php">Opdracht 4.1</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 4.2</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.3.php">Opdracht 4.3</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.4.php">Opdracht 4.4</a>
+                    </li>
+                </ul>
+            </li>
             <br>
-            <ul>
-                <li>
-                    <a href="hoofdstuk4/Opdracht4.1.php">Opdracht 4.1</a>
-                </li>
-                <li>
-                    <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 4.2</a>
-                </li>
-                <li>
-                    <a href="hoofdstuk4/Opdracht4.3.php">Opdracht 4.3</a>
-                </li>
-                <li>
-                    <a href="hoofdstuk4/Opdracht4.4.php">Opdracht 4.4</a>
-                </li>
-            </ul>
-        </li>
+            <li><span class="Hoofdstukken">Hoofdstuk 5</span>
+                <br>
+                <ul>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.1.php">Opdracht 5.1</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 5.2</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.3.php">Opdracht 5.3</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk4/Opdracht4.4.php">Opdracht 5.4</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </aside>
     <main id="wrapper">

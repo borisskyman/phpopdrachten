@@ -87,7 +87,29 @@ ul,li
     font-size: 17px;
     font-family: "Book Antiqua";
 }
-
-
+input
+{
+    width: 500px;
+}
+table
+{
+    border-collapse: collapse;
+}
+table, td, tr
+{
+    border: 1px solid black;
+}
+td
+{
+    width: 140px;
+}
+.RestariaText
+{
+    font-family: 'AcmeFont';
+}
+.FormulierLabelText
+{
+    font-family: 'Tahoma';
+}
 
 
