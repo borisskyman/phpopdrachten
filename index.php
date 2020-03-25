@@ -65,10 +65,10 @@
                 <br>
                 <ul>
                     <li>
-                        <a href="hoofdstuk4/Opdracht4.1.php">Opdracht 5.1</a>
+                        <a href="hoofdstuk5/Opdracht5.1.php">Opdracht 5.1</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk4/Opdracht4.2.php">Opdracht 5.2</a>
+                        <a href="hoofdstuk5/Opdracht5.2.php">Opdracht 5.2</a>
                     </li>
                     <li>
                         <a href="hoofdstuk4/Opdracht4.3.php">Opdracht 5.3</a>
