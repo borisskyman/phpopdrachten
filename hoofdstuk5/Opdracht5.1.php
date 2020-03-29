@@ -64,7 +64,7 @@ include '../Includes/header.php'; ?>
             </label>
             <br>
             <!-- U kunt hiermee  lange text invoeren op de website -->
-            <textarea id="TextArea" name="TextArea" rows="4" cols="62"></textarea>
+            <textarea id="Message" name="TextArea" rows="4" cols="62"></textarea>
             <br>
             <br>
             <!-- Hiermee verstuurt u de ingevoerde gegevens uit naar form_data.php -->

@@ -87,21 +87,18 @@ ul,li
     font-size: 17px;
     font-family: "Book Antiqua";
 }
-input
-{
-    width: 500px;
-}
-table
+#DataFormTable
 {
     border-collapse: collapse;
 }
-table, td, tr
+.formDataTable
 {
     border: 1px solid black;
 }
-td
+.UitschrijfFormulier
 {
-    width: 140px;
+    width: 340px;
+    font-family: "Tahoma";
 }
 .RestariaText
 {
@@ -109,7 +106,11 @@ td
 }
 .FormulierLabelText
 {
-    font-family: 'Tahoma';
+    font-family: "Tahoma";
 }
-
+.UitschrijfingTextBox
+{
+    width: 300px;
+    font-family: "Tahoma";
+}
 
