@@ -23,6 +23,7 @@ include '../Includes/functions.php'?>
                     <label>Naam</label>
                 </td>
                 <td>
+                    <!-- Geeft weer terug aan wat u heeft ingevuld -->
                     <?php
                     if (isset($_POST['Name']))
                     {
@@ -30,7 +31,8 @@ include '../Includes/functions.php'?>
                     }
                     else
                     {
-                        echo "Naam niet ingevoerd";
+                        $returnWaarde = "Naam niet ingevoerd";
+                        echo $returnWaarde;
                     }
                     ?>
                 </td>
@@ -42,6 +44,7 @@ include '../Includes/functions.php'?>
                     </label>
                 </td>
                 <td>
+                    <!-- Geeft weer terug aan wat u heeft ingevuld -->
                     <?php
                     if (isset($_POST['Age']))
                     {
@@ -49,7 +52,7 @@ include '../Includes/functions.php'?>
                     }
                     else
                     {
-                        echo "Leeftijd niet ingevoerd";
+                        return "Leeftijd niet ingevoerd";
                     }
                     ?>
                 </td>
@@ -61,6 +64,7 @@ include '../Includes/functions.php'?>
                     </label>
                 </td>
                 <td>
+                    <!-- Geeft weer terug aan wat u heeft ingevuld -->
                     <?php
                     if (isset($_POST['Township']))
                     {
@@ -68,7 +72,8 @@ include '../Includes/functions.php'?>
                     }
                     else
                     {
-                        echo "Gemeente niet gekozen";
+                        $returnWaarde = "Gemeente niet gekozen";
+                        echo $returnWaarde;
                     }
                     ?>
                 </td>
@@ -78,6 +83,7 @@ include '../Includes/functions.php'?>
                     <label>Inwoners</label>
                 </td>
                 <td>
+                    <!-- Geeft weer terug aan wat u heeft ingevuld -->
                     <?php
                     if (isset($_POST['citizens']))
                     {
@@ -85,7 +91,8 @@ include '../Includes/functions.php'?>
                     }
                     else
                     {
-                        echo "Aantal bewoners niet ingevoerd";
+                        $returnWaarde = "Aantal bewoners niet ingevoerd";
+                        echo $returnWaarde;
                     }
                     ?>
                 </td>
@@ -97,6 +104,7 @@ include '../Includes/functions.php'?>
                     </label>
                 </td>
                 <td>
+                    <!-- Geeft weer terug aan wat u heeft ingevuld -->
                     <?php
                     if (isset($_POST['infected']))
                     {
@@ -105,7 +113,8 @@ include '../Includes/functions.php'?>
                     }
                     else
                     {
-                        echo "niet ingevoerd";
+                        $returnWaarde =  "niet ingevoerd";
+                        echo $returnWaarde;
                     }
                     ?>
 
@@ -118,6 +127,7 @@ include '../Includes/functions.php'?>
                     </label>
                 </td>
                 <td>
+                    <!-- Geeft weer terug aan wat u heeft ingevuld -->
                     <?php
                     if (isset($_POST['DoYouKnowThem']))
                     {
@@ -125,7 +135,8 @@ include '../Includes/functions.php'?>
                     }
                     else
                     {
-                        echo "niet ingevuld";
+                        $returnWaarde =  "niet ingevuld";
+                        echo $returnWaarde;
                     }
                     ?>
                 </td>
@@ -144,6 +155,7 @@ include '../Includes/functions.php'?>
                     </label>
                 </td>
                 <td>
+                    <!-- Laat het risico kans zien van het ingevoerde nummer -->
                     <?php echoKans(); ?>
                 </td>
             </tr>
@@ -154,11 +166,13 @@ include '../Includes/functions.php'?>
                     </label>
                 </td>
                 <td>
-                    <?php getKans1Op(); ?>
+                    <!-- Laat het risico kans zien van het ingevoerde nummer -->
+                    <?php echo getKans1Op(); ?>
                 </td>
             </tr>
             <tr>
                 <td>
+                    <!-- Vergelijkt hoeveel kans u ook heeft op andere dingen dat u heeft ingevuld als cijfer zoals een ongeluk -->
                     <?php echo vergelijkOorzaken($covidkans); ?>
                 </td>
             </tr>

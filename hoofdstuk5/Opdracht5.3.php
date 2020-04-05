@@ -19,11 +19,13 @@ include '../Includes/header.php'; ?>
                         <label>Wat is je naam:</label>
                     </td>
                     <td>
+                        <!-- Hiermee kunt u uw naam invullen -->
                         <input type="text" name="Name">
                     </td>
                 </tr>
                 <tr>
                     <td>
+                        <!-- Hiermee kunt u uw leeftijd invullen -->
                         <label>Wat is je leeftijd:</label>
                     </td>
                     <td>
@@ -35,6 +37,7 @@ include '../Includes/header.php'; ?>
                         <label>Gemeente</label>
                     </td>
                     <td>
+                        <!-- U kunt hiermee kizezen uit welk gemeente u vandaan komt -->
                         <select name="Township">
                             <option value="Nijmegen">Nijmegen</option>
                             <option value="Denbosch">Denbosch</option>
@@ -58,6 +61,7 @@ include '../Includes/header.php'; ?>
                         </label>
                     </td>
                     <td>
+                        <!-- Hiermee kunt u uit de 2 rondjes uitkiezen, of u mensen kent die besmet zijn in uw woonplaats -->
                         <input type="radio" name="DoYouKnowThem" value="ja" checked>Ja
                         <input type="radio" name="DoYouKnowThem" value="nee">Nee
                     </td>
@@ -69,6 +73,7 @@ include '../Includes/header.php'; ?>
                         </label>
                     </td>
                     <td>
+                        <!-- Hiermee geeft u aan hoeveel aantallen mensen besmet zijn in je gemeente -->
                         <input type="text" name="infected">
                     </td>
                 </tr>
@@ -76,6 +81,8 @@ include '../Includes/header.php'; ?>
             <input type="submit" name="verzend" value="verzend">
             <br>
             <br>
+            <!-- Hiermee kunt u naar de website gaan om de aantal geverifieerde corona patienten er zijn te bekijken, of het aantal stijgt of daalt
+             na mater tijd-->
             <label>* Zie aantallen per gemeente per 100.000 bewoners</label>
             <a href="https://www.rivm.nl/actuele-informatie-over-coronavirus">Site RIVM</a>
         </form>
