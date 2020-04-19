@@ -62,7 +62,7 @@ include '../Includes/header.php'; ?>
                     </td>
                     <td>
                         <!-- Hiermee kunt u uit de 2 rondjes uitkiezen, of u mensen kent die besmet zijn in uw woonplaats -->
-                        <input type="radio" name="DoYouKnowThem" value="ja" checked>Ja
+                        <input type="radio" name="DoYouKnowThem" value="ja">Ja
                         <input type="radio" name="DoYouKnowThem" value="nee">Nee
                     </td>
                 </tr>
@@ -87,7 +87,6 @@ include '../Includes/header.php'; ?>
             <a href="https://www.rivm.nl/actuele-informatie-over-coronavirus">Site RIVM</a>
         </form>
         <br>
-        <a href="../index.php">Terug</a>
         <?php include '../Includes/footer.php'; ?>
     </body>
 </html>

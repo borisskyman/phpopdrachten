@@ -113,4 +113,49 @@ ul,li
     width: 300px;
     font-family: "Tahoma";
 }
-
+#foutmeldingEindopdrachtP3
+{
+    color: red;
+    font-family: "Arial";
+}
+#EindopdrachtP3FieldSetOne
+{
+    float: left;
+    width: 20%;
+    height: 175px;
+    box-sizing: border-box;
+}
+#EindopdrachtP3FieldSetTwo
+{
+    float: left;
+    width: 20%;
+    height: 175px;
+    box-sizing: border-box;
+}
+.EO3Gegevens
+{
+    position: absolute;
+    top: 320px;
+    left: 1px;
+}
+#EO3TerugNaarVorigePaginaLink
+{
+    top: 370px;
+}
+#EO3welkom
+{
+    position: relative;
+    left: 260px;
+    font-family: 'Tahoma';
+}
+.EO3AlgemeenTekstOpmaak
+{
+    font-family: "Arial";
+    font-weight: normal;
+}
+#EO3button
+{
+    position: relative;
+    left: 70px;
+    font-size: 20px;
+}

@@ -76,6 +76,9 @@
                     <li>
                         <a href="hoofdstuk5/Opdracht5.4.php">Opdracht 5.4</a>
                     </li>
+                    <li>
+                        <a href="Eindopdracht%20Periode%203/login.php">Eindopdracht Periode 3</a>
+                    </li>
                 </ul>
             </li>
         </ul>
