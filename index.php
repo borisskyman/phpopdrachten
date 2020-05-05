@@ -81,6 +81,18 @@
                     </li>
                 </ul>
             </li>
+            <br>
+            <li><span class="Hoofdstukken">Hoofdstuk 6</span>
+                <br>
+                <ul>
+                    <li>
+                        <a href="hoofdstuk6/opdracht6.1.php">Opdracht 6.1</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk5/Opdracht5.2.php">Opdracht 6.2</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </aside>
     <main id="wrapper">
