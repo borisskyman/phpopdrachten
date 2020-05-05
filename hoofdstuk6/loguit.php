@@ -8,7 +8,13 @@
 $opdracht = "loguit";
 include '../Includes/header.php'; ?>
 <body>
+<?php
 
+session_start();
+session_destroy();
+header('location: opdracht6.1.php');
+
+?>
 <br>
 <a href="../index.php">Terug</a>
 <?php include '../Includes/footer.php'; ?>
