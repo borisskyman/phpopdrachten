@@ -7,22 +7,31 @@
  */
 $opdracht = "checklogin";
 include '../Includes/header.php'; ?>
-<body>
 <?php
-if ($_POST['username'] == 'Abu'&& $_POST['password']== 'bekend')
+$authUsers = Array
+(
+    "Abu"=> "bekend",
+    "Nordin"=> "onbekend",
+    "BasZ"=> "654321",
+    "Rosalie"=> "bloemblaadjes"
+);
+
+foreach ($authUsers as $key => $value)
 {
-    session_start();
-    $_SESSION['username'] = $_POST['username'];
-    header('location: welkom.php');
-}
-else
+    if ($_POST['username'] ==  $key && $_POST['password'] == $value)
+    {
+        session_start();
+        $_SESSION['username'] = $_POST['username'];
+        header('location: welkom.php');
+    }
+    else
     {
         $message = "Ongeldige username/wachtwoord//{$_POST['username']}, probeer het nog eens.";
-        include "opdracht6.1.php";
+        //include "opdracht6.1.php";
+
     }
+}
+echo $message;
 ?>
-<br>
-<a href="../index.php">Terug</a>
-<?php include '../Includes/footer.php'; ?>
 </body>
 </html>

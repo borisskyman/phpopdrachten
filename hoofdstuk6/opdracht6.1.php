@@ -8,7 +8,7 @@
 $opdracht = "Opdracht 6.1";
 include '../Includes/header.php'; ?>
 <body>
-<form action="loguit.php.php" method="post">
+<form method="post" action="checklogin.php">
 <label>
     Username:
 </label>
@@ -18,11 +18,14 @@ include '../Includes/header.php'; ?>
     Wachtwoord:
 </label>
     <input type="password" id="password" name="password">
-
 <br>
-<a href="../index.php">Terug</a>
+<br>
+    <input type="submit" name="submit" value="verzend">
+</form>
+<br>
+<br>
+    <a href="../index.php">Terug</a>
 <br>
 <?php include '../Includes/footer.php'; ?>
-</form>
 </body>
 </html>

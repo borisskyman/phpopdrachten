@@ -2,8 +2,8 @@
 /**
  * User: Boris Vasic
  * Date: 5-5-2020
- * Time: 12:02
- * File: opdracht3.3.php
+ * Time: 23:01
+ * File: opdracht6.2.php
  */
 $opdracht = "Opdracht 6.2";
 include '../Includes/header.php'; ?>
