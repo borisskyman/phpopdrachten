@@ -6,7 +6,8 @@
  * File: opdracht6.2.php
  */
 $opdracht = "Opdracht 6.2";
-include '../Includes/header.php'; ?>
+include '../Includes/header.php';
+?>
 <body>
 <h1>
     Spel steen papier schaar
@@ -42,48 +43,50 @@ include '../Includes/header.php'; ?>
         $computerkeuzegetal = rand(0,2);
         $computerkeuze = $opties[$computerkeuzegetal];
         echo "&nbsp;&nbsp;De computer koos: <img src='images/{$computerkeuze}.png' class='SteenPapierSchaar'> <br><br>";
+
         $spelerKeuze = $_GET['keuze'];
         $_SESSION['user1'] = 0;
         $_SESSION['user2'] = 0;
         if ($spelerKeuze == $computerkeuze)
         {
             echo "gelijke keuzes wint niemand <br><br>";
+            $_SESSION['user2'] += 0;
             echo "De score is ". $_SESSION['user1'] . " tegen " . $_SESSION['user2'];
         }
         else if ($spelerKeuze == "schaar" && $computerkeuze == "papier")
         {
+            $_SESSION['user1'] += 1;
             echo "schaar wint van papier <br><br>";
-            $_SESSION['user1'] +=1;
             echo "De score is ". $_SESSION['user1'] . " tegen " . $_SESSION['user2'];
         }
         else if ($spelerKeuze == "schaar" && $computerkeuze == "steen")
         {
+            $_SESSION['user2'] += 1;
             echo "schaar verliest van steen <br><br>";
-            $_SESSION['user2'] +=1;
             echo "De score is ". $_SESSION['user1'] . " tegen " . $_SESSION['user2'];
         }
         else if ($spelerKeuze == "steen" && $computerkeuze == "schaar")
         {
+            $_SESSION['user1'] += 1;
             echo "steen wint van schaar <br><br>";
-            $_SESSION['user1'] +=1;
             echo "De score is ". $_SESSION['user1'] . " tegen " . $_SESSION['user2'];
         }
         else if ($spelerKeuze == "steen" && $computerkeuze == "papier")
         {
+            $_SESSION['user2'] += 1;
             echo "steen verliest van papier <br><br>";
-            $_SESSION['user2'] +=1;
             echo "De score is ". $_SESSION['user1'] . " tegen " . $_SESSION['user2'];
         }
         else if ($spelerKeuze == "papier" && $computerkeuze == "steen")
         {
+            $_SESSION['user1'] += 1;
             echo "papier wint van steen <br><br>";
-            $_SESSION['user1'] +=1;
             echo "De score is ". $_SESSION['user1'] . " tegen " . $_SESSION['user2'];
         }
         else if ($spelerKeuze == "papier" && $computerkeuze == "schaar")
         {
+            $_SESSION['user2'] += 1;
             echo "papier verliest van schaar <br><br>";
-            $_SESSION['user2'] +=1;
             echo "De score is ". $_SESSION['user1'] . " tegen " . $_SESSION['user2'];
         }
         if ($_SESSION['user1'] == 5)
