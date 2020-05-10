@@ -93,7 +93,13 @@
                     </li>
                 </ul>
             </li>
-        </ul>
+            <li><span class="Hoofdstukken">Hoofdstuk 7</span>
+                <br>
+                <ul>
+                    <li>
+                        <a href="hoofdstuk7/Opdracht7.1.php">Opdracht 7.1</a>
+                    </li>
+                </ul>
     </aside>
     <main id="wrapper">
         <h2>Uitwerkingen</h2>

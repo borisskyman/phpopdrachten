@@ -34,6 +34,11 @@ include '../Includes/header.php';
     Start het spel door schaar, papier of steen te kiezen. De computer kiest samen tegelijkertijd met jou.
 </p>
 <?php
+    if (isset($_SESSION['user1']) == false)
+    {
+        $_SESSION['user1'] = 0;
+        $_SESSION['user2'] = 0;
+    }
     if (isset($_GET['keuze']))
     {
         echo "Jij koos: <img src='images/{$_GET['keuze']}.png' class='SteenPapierSchaar'>";
@@ -45,8 +50,7 @@ include '../Includes/header.php';
         echo "&nbsp;&nbsp;De computer koos: <img src='images/{$computerkeuze}.png' class='SteenPapierSchaar'> <br><br>";
 
         $spelerKeuze = $_GET['keuze'];
-        $_SESSION['user1'] = 0;
-        $_SESSION['user2'] = 0;
+
         if ($spelerKeuze == $computerkeuze)
         {
             echo "gelijke keuzes wint niemand <br><br>";
@@ -91,14 +95,18 @@ include '../Includes/header.php';
         }
         if ($_SESSION['user1'] == 5)
         {
-            $Winnaar = "De Computer wint! <br> Het spel start weer opnieuw als je een nieuwe keuze maakt";
-            return $Winnaar;
+            $Winnaar = "<br><br>Jij Wint! <br> Het spel start weer opnieuw als je een nieuwe keuze maakt";
+            echo $Winnaar;
+            $_SESSION['user1'] = 0;
+            $_SESSION['user2'] = 0;
             session_destroy();
         }
         else if ($_SESSION['user2'] == 5)
         {
-            $Winnaar = "Jij wint! <br> Het spel start weer opnieuw als je een nieuwe keuze maakt";
-            return $Winnaar;
+            $Winnaar = "<br><br>De Computer wint! <br> Het spel start weer opnieuw als je een nieuwe keuze maakt";
+            echo $Winnaar;
+            $_SESSION['user1'] = 0;
+            $_SESSION['user2'] = 0;
             session_destroy();
         }
     }
