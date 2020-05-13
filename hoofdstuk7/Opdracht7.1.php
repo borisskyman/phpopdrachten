@@ -43,13 +43,21 @@ catch (PDOException $e)
    $aJokes = array();
 
    // Door de results heen loopen via een while
-   while ($row = $result->fetch(PDO::FETCH_ASSOC))
+   while ($row = $result-> fetch(PDO::FETCH_ASSOC))
    {
     // Result wegschrijven in de $aJokes array
     $aJokes[] = $row;
    }
    // Tonen van de inhoud van aJokes
+   echo "<pre>";
    var_dump($aJokes);
+   echo "</pre>";
+
+foreach($aJokes as $grap)
+{
+    echo "<br>".$grap['joketext'];
+    echo "<br>".$grap['jokeclou'];
+}
 ?>
 
 <br>
