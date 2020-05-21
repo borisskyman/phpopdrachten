@@ -103,6 +103,9 @@
                     <li>
                         <a href="hoofdstuk7/Opdracht7.2.php">Opdracht 7.2</a>
                     </li>
+                    <li>
+                    <a href="hoofdstuk7/Opdracht7.3.php">Opdracht 7.3</a>
+                    </li>
                 </ul>
     </aside>
     <main id="wrapper">
