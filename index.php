@@ -93,11 +93,15 @@
                     </li>
                 </ul>
             </li>
+            <br>
             <li><span class="Hoofdstukken">Hoofdstuk 7</span>
                 <br>
                 <ul>
                     <li>
                         <a href="hoofdstuk7/Opdracht7.1.php">Opdracht 7.1</a>
+                    </li>
+                    <li>
+                        <a href="hoofdstuk7/Opdracht7.2.php">Opdracht 7.2</a>
                     </li>
                 </ul>
     </aside>

@@ -9,7 +9,7 @@ while   ($counter > -1)
     {
         $task2 .= ",";
     }
-        $counter--;
+    $counter--;
 }
 $task3 = "Lancering in: ";
 for ($counter = 19; $counter > -1;)
@@ -46,19 +46,19 @@ $task6 = "";
 $YearDate = 2020;
 while ($YearDate > 2001)
 {
-        if ($YearDate == 2020)
-        {
-            $task6 = "<p> in ".$YearDate." ben/word ik 18 jaar oud</p>";
-        }
-        else if ($YearDate > 2002)
-        {
-            $Age = $YearDate - 2002;
-            $task6 .= "<p> in ".$YearDate." was ik ".$Age." jaar oud</p>";
-        }
-        else
-        {
-            $task6 .= "<p> in ".$YearDate." ben ik geboren</p>";
-        }
+    if ($YearDate == 2020)
+    {
+        $task6 = "<p> in ".$YearDate." ben/word ik 18 jaar oud</p>";
+    }
+    else if ($YearDate > 2002)
+    {
+        $Age = $YearDate - 2002;
+        $task6 .= "<p> in ".$YearDate." was ik ".$Age." jaar oud</p>";
+    }
+    else
+    {
+        $task6 .= "<p> in ".$YearDate." ben ik geboren</p>";
+    }
     $YearDate--;
 }
 $task7 = "";
@@ -69,15 +69,15 @@ while ($YearDate > 2001)
     {
         $task7 .= "<p> in ".$YearDate." ben ik 20 en word ik volwassenen</p>";
     }
-   else if ($YearDate == 2021)
-   {
-       $Age = $YearDate - 2002;
-       $task7 .= "<p> in ".$YearDate." word ik $Age </p>";
-   }
-   else if ($YearDate == 2020)
-   {
-       $task7 .= "<p> in ".$YearDate." ben ik 18 en word ik een adolescent</p>";
-   }
+    else if ($YearDate == 2021)
+    {
+        $Age = $YearDate - 2002;
+        $task7 .= "<p> in ".$YearDate." word ik $Age </p>";
+    }
+    else if ($YearDate == 2020)
+    {
+        $task7 .= "<p> in ".$YearDate." ben ik 18 en word ik een adolescent</p>";
+    }
     else if ($YearDate == 2014)
     {
         $Age = $YearDate - 2002;

@@ -164,5 +164,9 @@ ul,li
     width: 5%;
     height: 5%;
 }
-
+.JokeCSS
+{
+    font-weight: bold;
+    text-align: center;
+}
 
