@@ -19,10 +19,13 @@ $aJokes = array();
 startConnection();
 
 // Executeren van een SQL query
+// Als ik een woord of letter opzoek, voert hij dit stuk code uit
+// Als de button nog niet is geklikt voert hij het andere stukje code uit bij de else functie.
+
 if (isset($_GET['jokesearch']))
 {
     $SearchedJoke = $_GET['jokesearch'];
-    $query = 'SELECT * FROM joke WHERE joketext LIKE %'.$SearchedJoke.'%';
+    $query = 'SELECT * FROM joke WHERE joketext LIKE \'%'.$SearchedJoke.'%\'';
 }
 else
 {
@@ -32,6 +35,7 @@ $jokes = executeQuery($query);
 
 echo "<p> $query </p>";
 ?>
+<!-- formulier bij het zoeken van grappen bij het joke tabel -->
 <form method="get">
     <label>
         Zoekterm:
@@ -49,6 +53,9 @@ while($row = $jokes->fetch(PDO::FETCH_ASSOC) )
 
 ?>
 <?php
+
+// Genereert een HTML tabel met de waardes van een SQL database genaamd ijdb.
+// Die jokes laat zien, de id, het begin, de mop, en de jokedatum
 
 echo "<table class='JokeSearchCSS'>";
 echo "<tr><th class='JokeSearchCSS'>Jokeid</th><th class='JokeSearchCSS'>Joketext</th><th class='JokeSearchCSS'>Jokeclou</th><th class='JokeSearchCSS'>Jokedate</th></tr>";

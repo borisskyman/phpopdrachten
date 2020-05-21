@@ -169,4 +169,14 @@ ul,li
     font-weight: bold;
     text-align: center;
 }
+.JokeSearchCSS
+{
+    font-weight: bold;
+    border: 1px solid black;
+}
+.jokeData
+{
+    font-weight: normal;
+    border: 1px solid black;
+}
 
