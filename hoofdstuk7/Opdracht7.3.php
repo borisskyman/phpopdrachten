@@ -1,11 +1,11 @@
 <?php
 /**
  * User: Boris Vasic
- * Date: 13-5-2020
- * Time: 12:23
- * File: opdracht7.2.php
+ * Date: 21-5-2020
+ * Time: 22:27
+ * File: opdracht7.3.php
  */
-$opdracht = "Opdracht 7.2";
+$opdracht = "Opdracht 7.3";
 include '../Includes/header.php'; ?>
 <body>
 <?php
@@ -34,7 +34,7 @@ include '../Includes/header.php'; ?>
     // en aangezien $pdo de connectie-handler is (het object dat de connectie vasthoudt)
     // moet ik de query wel op die manier uitvoeren
 
-   // $sql = 'SELECT * FROM joke WHERE jokedate < GETDATE();';
+    // $sql = 'SELECT * FROM joke WHERE jokedate < GETDATE();';
     $sql = 'SELECT * FROM joke';
     $result = $pdo->query($sql);
     while ($row = $result->fetch(PDO::FETCH_ASSOC))
@@ -45,17 +45,18 @@ include '../Includes/header.php'; ?>
     }
     //print_r($aJokes);
     //var_dump($aJokes);
+
     // Genereert een HTML tabel met de waardes van een SQL database genaamd ijdb.
     // Die jokes laat zien, de id, het begin, de mop, en de jokedatum
     echo "<br><br><table>";
-    echo "<tr><th class='JokeCSS'>ID</th><th class='JokeCSS'>Joketext</th><th class='JokeCSS'>Jokeclou</th><th class='JokeCSS'>Jokedate</th></tr>";
+    echo "<tr><td class='JokeCSS'>ID</td><td class='JokeCSS'>Joketext</td><td class='JokeCSS'>Jokeclou</td><td class='JokeCSS'>Jokedate</td></tr>";
     foreach($aJokes as $grap)
     {
         echo "<tr><td>".$grap['id']."</td><td>".$grap['joketext']."</td><td>".$grap['jokeclou']."</td><td>".$grap['jokedate']."</td></tr>";
     }
     echo "</table>";
-?>
 
+?>
 <br>
 <a href="../index.php">Terug</a>
 <?php include '../Includes/footer.php'; ?>
