@@ -104,9 +104,10 @@
                         <a href="hoofdstuk7/Opdracht7.2.php">Opdracht 7.2</a>
                     </li>
                     <li>
-                    <a href="hoofdstuk7/Opdracht7.3.php">Opdracht 7.3</a>
+                        <a href="hoofdstuk7/Opdracht7.3.php">Opdracht 7.3</a>
                     </li>
-                </ul>
+                        <a href="hoofdstuk7/Opdracht7.4.php">Opdracht 7.4</a>
+                    </ul>
     </aside>
     <main id="wrapper">
         <h2>Uitwerkingen</h2>
@@ -120,8 +121,7 @@
     {
         $bezoeker = "onbekende bezoeker". "&nbsp;<a href='/phpopdrachten/hoofdstuk6/opdracht6.1.php'>Login</a>";
     }
-    ?>
-    <?php
+
     $name = "Boris Vasic";
     date_default_timezone_set("Europe/Amsterdam");
     $uur = date("G");

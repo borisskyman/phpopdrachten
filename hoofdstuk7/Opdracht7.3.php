@@ -66,5 +66,8 @@ foreach($aJokes as $grap)
 echo "</table>";
 ?>
 <br>
+<a href="Opdracht7.4.php">Grap toevoegen</a>
+<br>
+<br>
 <a href="../index.php">Terug</a>
 <?php include '../Includes/footer.php'; ?>

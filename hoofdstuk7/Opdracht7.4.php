@@ -3,12 +3,15 @@
  * User: Boris Vasic
  * Date: 31-5-2020
  * Time: 17:26
- * File: opdracht7.1.php
+ * File: opdracht7.4.php
  */
-$opdracht = "Opdracht 7.1";
+$opdracht = "Opdracht 7.4";
 include '../Includes/header.php';
 ?>
 <body>
+    <!-- Formulier voor het invoeren van grappen, nadat u op verzenden
+     klikt wordt u geredirect naar het volgende pagina genaamd insert.php
+     -->
     <form action="insert.php" method="post">
         <h1>
             Nieuwe grap toevoegen
@@ -16,6 +19,8 @@ include '../Includes/header.php';
         <label>
             Joketext
         </label>
+        <!-- placeholder zorgt ervoor dat je text ziet in de formulier als er niks in staat,
+        het legt uit wat je in de textveld kan invoeren -->
         <input type="text" id="JokeTextMaker" name="JokeTextMaker" placeholder="Joketext komt hier">
         <br>
         <label>
