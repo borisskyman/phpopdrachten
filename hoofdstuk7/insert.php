@@ -51,18 +51,25 @@ if (isset($_POST['JokeTextMaker']))
             // het SQL tabel.
             $query = "INSERT INTO joke VALUES ('$JokeTexMaker', '$JokeClouMaker', '$CurrentDate')";
 
-            //De ingevoerde grap is dankzij executeQueryViaExec($query) nu volledig in SQL opgeslagen
-            // en kan teruggezien worden in Opdracht 7.3
-            executeQueryViaExec($query);
-
             // geeft aan hoe de insert into waarde eruit ziet in HTML/CSS/PHP
             echo $query;
 
-            echo "<h1>Grap toegevoegd!</h1>";
-            echo "<p>Bedankt voor het toevoegen van je grap. Hieronder zie je een overzicht van je grap:</p>";
-            echo "<label>joketext: ".$JokeTexMaker."</label><br>";
-            echo "<label>jokeclou: ".$JokeClouMaker."</label><br><br><br>";
-            echo "<a href='Opdracht7.3.php'>Bekijk grappen (opdracht 7.3) </a>";
+            //De ingevoerde grap is dankzij executeQueryViaExec($query) nu volledig in SQL opgeslagen
+            // en kan teruggezien worden in Opdracht 7.3
+            try
+            {
+                executeQueryViaExec($query);
+                echo "<h1>Grap toegevoegd!</h1>";
+                echo "<p>Bedankt voor het toevoegen van je grap. Hieronder zie je een overzicht van je grap:</p>";
+                echo "<label>joketext: ".$JokeTexMaker."</label><br>";
+                echo "<label>jokeclou: ".$JokeClouMaker."</label><br><br><br>";
+                echo "<a href='Opdracht7.3.php'>Bekijk grappen (opdracht 7.3) </a>";
+            }
+            catch (PDOException $e)
+            {
+                echo 'Er is een probleem met uitvoeren van exec();, Het is helaas niet gelukt' . $e->getMessage();
+                exit();
+            }
         }
     }
 }
